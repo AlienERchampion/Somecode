@@ -1,0 +1,102 @@
+<HTML>
+	<head>
+		<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="js/calendar.js"></script>
+		
+		
+		<title>Calendar Widget</title> 
+		
+		<link rel="stylesheet" href="css/calendar.css"  /> 
+		
+		
+	</head>
+	<body>	
+		
+		
+		
+		<div class="container">
+			
+			<div class="row" style="margin-bottom:5%;">
+				<div class="col-md-3" style="padding: 0px;">
+				            <div class="form_group">
+				                    <label for="idavuelta" class="radioWB">
+				                        <input type="radio" id="idavuelta" name="idaYVuelta"> 
+				                        Ida y vuelta
+				                    </label>
+				                    <label for="ida" class="radioWB">
+				                        <input type="radio" id="ida" name="idaYVuelta"> 
+				                        Sólo ida
+				                    </label>
+				            </div>
+				</div>
+				<div class="col-md-3">
+					<select name="select">
+						<option value="blanco" selected>ORIGEN</option>
+						<option value="S/C de Tenerife">S/C de Tenerife</option>
+						<option value="Los Cristianos, Tenerife">Los Cristianos, Tenerife</option>
+						<option value="Las Palmas de Gran Canaria">Las Palmas de Gran Canaria</option>
+						<option value="Valverde, El Hierro">Valverde, El Hierro</option>
+						<option value="S/C de La Palma">S/C de La Palma</option>
+						<option value="Arrecife, Lanzarote">Arrecife, Lanzarote</option>
+						<option value="Puerto del Rosoario, Fuerteventura">Puerto del Rosoario, Fuerteventura</option>
+						<option value="San Sebastián de La Gomera">San Sebastián de La Gomera</option>
+					</select>
+				</div>
+				<div class="col-md-3">
+					<select name="select">
+						<option value="blanco" selected>DESTINO</option>
+						<option value="S/C de Tenerife">S/C de Tenerife</option>
+						<option value="Los Cristianos, Tenerife">Los Cristianos, Tenerife</option>
+						<option value="Las Palmas de Gran Canaria">Las Palmas de Gran Canaria</option>
+						<option value="Valverde, El Hierro">Valverde, El Hierro</option>
+						<option value="S/C de La Palma">S/C de La Palma</option>
+						<option value="Arrecife, Lanzarote">Arrecife, Lanzarote</option>
+						<option value="Puerto del Rosoario, Fuerteventura">Puerto del Rosoario, Fuerteventura</option>
+						<option value="San Sebastián de La Gomera">San Sebastián de La Gomera</option>
+					</select>
+				</div>
+
+				<div class="col-md-3">
+					<select name="select">
+						<option value="blanco" selected>	
+							 <div id="cal"> 
+						    		<div class="header"> 
+						 			<span class="left button" id="prev"> &lang; </span> 
+									<span class="left hook"></span> 
+									<span class="month-year" id="label"></span> 
+									<span class="right hook"></span> 
+									<span class="right button" id="next"> &rang; </span>
+						    		</div> 
+						    		<table id="days"> 
+						 
+						 			<td>L</td> 
+									<td>M</td> 
+									<td>X</td> 
+									<td>J</td> 
+									<td>F</td> 
+									<td>S</td> 
+									<td>D</td>
+						    		</table> 
+						    		<div id="cal-frame"> 
+						 		
+						 
+						    		</div> 
+							</div>
+							
+						</option>
+					  
+	  
+					</select>
+					<script>
+						var cal = CALENDAR(); 
+				 
+						cal.init();
+					</script>
+				</div>
+				
+			</div>
+		</div>
+	</body>
+</HTML>
